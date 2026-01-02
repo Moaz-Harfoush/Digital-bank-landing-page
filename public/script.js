@@ -10,7 +10,7 @@ let div = ul.cloneNode(true);
 // Add Tailwind CSS classes to style the cloned menu
 div.classList.add(
     "w-[80%]",
-    "h-[250px]",
+    "h-fit",
     "bg-white",
     "rounded-[10px]",
     "absolute",

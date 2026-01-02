@@ -2,13 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+.navbar ul li {
+    @apply h-full flex items-center justify-center;
+}
+
 .navbar ul li a {
-    @apply  relative text-neutral-gray hover:text-primary-dark-blue
-            before:content-[''] before:absolute before:top-11 
+    @apply  h-[90%] flex items-center justify-center text-center relative
+            text-neutral-gray hover:text-primary-dark-blue
+            before:content-[''] before:absolute before:top-full
             before:left-0 before:h-[5px]  before:w-0 
             before:transition-all before:duration-500 
             hover:before:w-full
-            before:bg-gradient-to-r before:from-primary-vivid-cyan before:to-primary-bright-green
+            before:bg-gradient-to-r before:from-yellow-400 before:to-primary-bright-green
 }
 
 .request {
