@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar ul li a {
+    @apply  relative text-neutral-gray hover:text-primary-dark-blue
+            before:content-[''] before:absolute before:top-11 
+            before:left-0 before:h-[5px]  before:w-0 
+            before:transition-all before:duration-500 
+            hover:before:w-full
+            before:bg-gradient-to-r before:from-primary-vivid-cyan before:to-primary-bright-green
+}
+
+.request {
+    @apply px-10 py-3 text-neutral-white duration-500 rounded-[2.5rem] select-none hover:opacity-75
+    bg-gradient-to-t from-primary-vivid-cyan to-primary-bright-green
+}
+
+.open {
+    @apply w-[25px] h-[25px] rotate-[360deg] bg-close
+}
+
+.image-mockups {
+    @apply  absolute top-[-25%] right-[-5%] w-[45%]
+            max-lg:top-[-10%] max-lg:right-[20%] max-lg:w-[60%]
+            max-md:w-[100%] max-md:right-[0%] max-md:top-[-20%]
+}
+
+.features-section {
+    @apply h-[fit-content] pl-[7rem] py-[5rem] max-lg:pl-[0] max-lg:flex max-lg:flex-col max-lg:items-center
+}
+
+.features-grid, .articles-grid {
+    @apply flex flex-wrap gap-4 mt-12 max-lg:justify-center
+}
+
+.features-grid div {
+    @apply w-[20rem] max-lg:flex max-lg:flex-col max-lg:items-center max-lg:text-center 
+}
+
+.features-grid div img {
+    @apply transition-transform duration-500 cursor-pointer hover:rotate-[360deg];
+}
+
+.features-grid div h3{
+    @apply my-6 text-2xl text-primary-dark-blue
+}
+
+.features-grid div p {
+    @apply w-[80%] text-neutral-gray max-lg:w-full max-lg:text-[14px]
+}
+
+.articles-grid > div {
+    @apply w-[18rem] bg-neutral-white rounded-xl overflow-hidden duration-500 hover:translate-y-[-2rem]  
+}
+
+.articles-grid > div img {
+    @apply w-full h-[200px] object-cover rounded-t-xl cursor-pointer duration-500 hover:scale-110
+}
+
+.articles-grid > div div {
+    @apply p-5
+}
+
+.author-name {
+    @apply text-neutral-gray text-[10px]
+}
+
+.article-title {
+    @apply my-2 text-xl text-primary-dark-blue cursor-pointer duration-500 hover:text-primary-vivid-cyan max-lg:text-[15px]
+}
+
+.article-description {
+    @apply text-neutral-gray leading-tight max-lg:text-[13px]
+}
+
+footer ul {
+    @apply flex flex-col gap-4 max-md:gap-2 max-md:text-center max-md:w-[9rem]
+}
+
+footer ul li a {
+    @apply text-neutral-white text-sm duration-500 hover:text-primary-vivid-cyan
+}

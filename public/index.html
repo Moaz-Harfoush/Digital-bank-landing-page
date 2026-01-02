@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Digitalbank - modern online banking for easy money management." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="./output.css" rel="stylesheet">
+  <title>Digital bank landing page</title>
+</head>
+<body class="min-h-[100vh] font-['Public_Sans'] overflow-x-hidden relative"> 
+
+  <header class="h-[13vh] w-full flex justify-around items-center relative top-0 left-0 z-10 
+                bg-neutral-white shadow-xl
+                  max-lg:justify-between max-lg:px-[2rem]">
+    <img class="h-1/3" src="images/logo-dark.svg" alt="logo">
+
+    <nav class="navbar">
+      <ul class="flex gap-[2.5rem] max-lg:gap-[1rem]">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </nav>
+
+    <button type="button" class="request">Request Invite</button>
+
+    <!-- icon of mobile -->
+    <div class="hamburger w-[2.5rem] h-[1rem] cursor-pointer bg-no-repeat bg-center bg-contain transition duration-500 bg-hamburger"></div>
+  </header>
+
+  <section class="min-h-[80vh] px-10 flex relative bg-neutral-off-white max-lg:flex-col-reverse max-md:px-0">
+
+    <div class=" max-w-[600px] px-[4rem] py-[8rem] max-lg:max-w-full max-lg:text-center max-lg:py-[2rem] max-md:p-0">
+
+      <h2 class="text-6xl mb-7 leading-[1.3] text-primary-dark-blue max-lg:text-4xl">Next generation digital banking</h2>
+
+        <p class="text-neutral-gray mb-7 text-[1.17rem] max-md:text-[.8rem] max-md:px-[2rem]">
+          Take your financial life online. Your Digitalbank account will be a one-stop-shop for spending,
+          saving, budgeting, investing, and much more.
+        </p>
+
+      <button type="button" class="request max-lg:mb-8">Request Invite</button>
+
+    </div>
+
+    <div>
+
+      <picture>
+        <source media="(min-width: 769px)" srcset="images/bg-intro-desktop.svg">
+        <source media="(max-width: 768px)" srcset="images/bg-intro-mobile.svg">
+        <img  src="images/bg-intro-desktop.svg" alt="bg-intro-desktop" 
+              class=" absolute top-[-40%] w-[75%] max-lg:static max-lg:w-[100%]" >
+      </picture>
+
+      <img  src="images/image-mockups.png" alt="image-mockups" class="image-mockups" >
+
+      
+    </div>
+
+  </section>
+
+  <section class="features-section bg-neutral-light-bg">
+
+      <div class="w-[45%] max-lg:w-[90%] max-lg:text-center">
+        <h2 class="text-4xl text-primary-dark-blue mb-8">Why choose Digitalbank?</h2>
+        <p class="text-neutral-gray text-[17px] max-lg:text-[14px]">
+          We leverage Open Banking to turn your bank account into your financial hub.
+          Control your finances like never before.
+        </p>
+      </div>
+
+      <div class="features-grid">
+
+        <div>
+          <img src="images/icon-online.svg" alt="icon-online" >
+          <h3>Online Banking</h3>
+          <p>
+            Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.
+          </p>
+        </div>
+
+        <div>
+          <img src="images/icon-budgeting.svg" alt="icon-budgeting">
+          <h3>Simple Budgeting</h3>
+          <p> See exactly where your money goes each month.
+              Receive notifications when you're close to hitting your limits.
+          </p>
+        </div>
+
+        <div>
+          <img src="images/icon-onboarding.svg" alt="icon-onboarding">
+          <h3>Fast Onboarding</h3>
+          <p> We don't branches. Open your account in minutes
+              online and start taking control of your finances right away.
+          </p>
+        </div>
+
+        <div>
+          <img src="images/icon-api.svg" alt="icon-api">
+          <h3>Open API</h3>
+          <p> Manage your savings, investments, pension, and much from one account.
+              Tracking your money has never been easier.
+          </p>
+        </div>
+
+      </div>
+
+  </section>
+
+  <section class="features-section bg-neutral-off-white">
+
+    <h3 class="text-4xl text-primary-dark-blue max-lg:text-center">Latest Articles</h3>
+
+    <div class="articles-grid">
+
+      <div>
+
+        <img src="images/image-currency.jpg" alt="currency">
+
+        <div>
+        
+          <p class="author-name">
+            By Claire Robinson
+          </p>
+
+          <p class="article-title">
+            Receive money in any currency with no fees
+          </p>
+
+          <p class="article-description">
+            The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive money in a single …
+          </p>
+
+        </div>
+
+      </div>
+
+      <div>
+
+        <img src="images/image-restaurant.jpg" alt="restaurant">
+
+        <div>
+        
+          <p class="author-name">
+            By Wilson Hutton
+          </p>
+
+          <p class="article-title">
+            Treat yourself without worrying about money
+          </p>
+
+          <p class="article-description">
+            Our simple budgeting feature allows you
+            to separate out your spending and set realistic limits each month. That means you …
+          </p>
+
+        </div>
+
+      </div>
+
+      <div>
+
+        <img src="images/image-plane.jpg" alt="plane">
+
+        <div>
+
+          <p class="author-name">
+            By Wilson Hutton
+          </p>
+
+          <p class="article-title">
+            Take your Digitalbank card wherever you go
+          </p>
+        
+          <p class="article-description">
+            We want you to enjoy your travels. This is why we don't Charge any fees on purchases while you're abroad.We'll even …
+          </p>
+
+        </div>
+
+      </div>
+
+      <div>
+
+        <img src="images/image-confetti.jpg" alt="confetti">
+
+        <div>
+          
+          <p class="author-name">
+            By Claire Robinson
+          </p>
+
+          <p class="article-title">
+            Our invite-only Beta accounts are now live!
+          </p>
+
+          <p class="article-description">
+            After a lot of hard work by the whole team,
+            we’re excited to launch our closed beta. It’s easy to request an invite through …
+          </p>
+
+        </div>
+
+      </div>
+    
+    </div>
+
+  </section>
+
+  <footer class="bg-primary-dark-blue  py-16 flex justify-center">
+
+    <div class="w-[80%] flex justify-between max-lg:flex-col max-lg:gap-10 max-lg:items-center">
+
+      <div class="flex gap-[8rem] max-md:flex-col max-md:gap-0">
+
+        <div class="h-[6rem] flex flex-col justify-between">
+
+          <div>
+            <img src="images/logo-light.svg" alt="logo-light">
+          </div>
+
+          <div class="flex justify-between cursor-pointer max-md:mb-5">
+            <img src="images/icon-facebook.svg" alt="facebook">
+            <img src="images/icon-youtube.svg" alt="youtube">
+            <img src="images/icon-twitter.svg" alt="twitter">
+            <img src="images/icon-pinterest.svg" alt="pinterest">
+            <img src="images/icon-instagram.svg" alt="instagram">
+          </div>
+        </div>
+
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+
+        <ul>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+
+      </div>
+
+      <div class="flex flex-col items-end gap-5 max-md:items-center">
+        <button type="button" class="request">Request Invite</button>
+        <p class="text-neutral-light-bg text-[15px]">ⓒ Digitalbank. All Rights Reserved</p>
+      </div>
+
+    </div>
+
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
